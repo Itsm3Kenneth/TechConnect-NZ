@@ -3,7 +3,6 @@ const shoppingCart = document.querySelector(".cart-display");
 const empty = document.querySelector(".empty");
 const remove = document.querySelector(".remove");
 let isEmpty = true;
-let line = [];
 let html = "";
 
 console.log(remove);
@@ -32,12 +31,11 @@ buyBtn.forEach(function (element) {
     isEmpty = false;
     console.log(isEmpty);
     const name = element.parentNode.children[0].textContent;
-    const description = element.parentNode.children[1].textContent;
-    const image = element.parentNode.children[2].getAttribute("src");
-    const price = element.parentNode.children[3].textContent;
+    const description = element.parentNode.children[3].textContent;
+    const image = element.parentNode.children[4].getAttribute("src");
+    const price = element.parentNode.children[5].textContent;
     console.log(`Phone: ${name}, ${price}, ${description}, ${image}`);
     cas();
-    line.push(name);
     html += `<aside class="cart-display">
               <div class="item">
                 <h3 class="item-name">${name}</h3>

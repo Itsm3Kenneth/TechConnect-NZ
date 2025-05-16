@@ -1,12 +1,22 @@
+:root{
+  --mainBlue: rgb(147, 191, 230);
+  --offwhite: #ffffff
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
+}
+
+.cata-head{
+  margin: 0 3em;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1em;
 }
 
 .name {
@@ -42,6 +52,7 @@ body {
   border-radius: 1em;
   align-items: center;
   justify-items: center;
+  justify-content: space-evenly;
   object-fit: contain;
   margin: 3em;
   max-width: 15%;
@@ -76,7 +87,7 @@ body {
 .cart {
   width: 99vw;
   display: block;
-  background-color: rgb(221, 221, 221);
+  background-color: var(--mainBlue);
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -89,7 +100,7 @@ body {
 }
 
 .cart-display {
-  background-color: rgb(243, 241, 241);
+  background-color: var(--offwhite);
   padding: 2em;
 }
 .container {
@@ -140,6 +151,10 @@ body {
 .container-remove {
   display: flex;
   justify-content: right;
-    background-color: rgb(243, 241, 241);
+    background-color: var(--offwhite);
     padding-bottom: 2em;
+}
+
+.rating{
+  font-size: 125%;
 }
