@@ -51,7 +51,8 @@ buyBtn.forEach(function (element) {
               </div>
             </aside>
             
-          </aside>`;
+          <hr>
+          `;
     shoppingCart.innerHTML += html;
     shoppingCart.scrollIntoView();
   });

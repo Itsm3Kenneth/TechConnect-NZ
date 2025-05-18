@@ -1,6 +1,6 @@
-:root{
+:root {
   --mainBlue: rgb(147, 191, 230);
-  --offwhite: #ffffff
+  --offwhite: #ffffff;
 }
 
 body {
@@ -8,7 +8,7 @@ body {
   font-family: sans-serif;
 }
 
-.cata-head{
+.cata-head {
   margin: 0 3em;
 }
 
@@ -91,7 +91,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  padding-bottom: 5em;
+  padding-bottom: 6em;
 }
 
 .cart h1 {
@@ -151,10 +151,18 @@ body {
 .container-remove {
   display: flex;
   justify-content: right;
-    background-color: var(--offwhite);
-    padding-bottom: 2em;
+  background-color: var(--offwhite);
+  padding-bottom: 2em;
 }
 
-.rating{
+.review:hover {
+  user-select: none;
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(104, 16, 104);
+}
+
+.rating {
+  user-select: none;
   font-size: 125%;
 }
